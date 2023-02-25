@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    display: grid;
+    place-items: center;
+    
+}
+#outer-container{
+    margin-top: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+
+}
+#main-container{
+    display: grid;
+    border-radius: 20px;
+    width: 400px;
+    height: 250px;
+}
+#first-part{
+
+}
+#second-part{
+    
+}
