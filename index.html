@@ -14,6 +14,10 @@
 
     <title>Frontend Mentor | Tip calculator app</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -26,36 +30,52 @@
     </style>
   </head>
   <body>
+    
     <div id="outer-container">
       <div id="main-container">
-        <div id="first-part">
+        <div id="first-part" class="part">
           <p>Bill</p>
+          
           <label for="name"></label>
-          <input type="number" />
+          <input type="number" placeholder="$" />
 
           <p>Select Tip %</p>
           <div id="tips-amount">
-            <button class="tip-btn"> 5% </button>
-            <button class="tip-btn"> 10% </button>
-            <button class="tip-btn"> 15% </button> <br>
-            <button class="tip-btn"> 25% </button>
-            <button class="tip-btn"> 50% </button>
-            <button class="tip-btn">customs </button>
+            <button class="tip-btn">5%</button>
+            <button class="tip-btn">10%</button>
+            <button class="tip-btn">15%</button> 
+            <button class="tip-btn">25%</button>
+            <button class="tip-btn">50%</button>
+            <input type="text" placeholder="custom" class="tip-btn" id="custom-btn">  </input>
           </div>
-          <div id="second-part">
-          Number of People
-          </div>
+         <p> Number of People</p>
+        <label for="name"></label>
+        <input type="number" />
         </div>
+        <div id="second-part" class="part">
+         <div class="second-part-p-div"> 
+          <p class="second-part-p">Tip Amount 
+            <span id="tip-amount" class="tip-div">$0.00</span></p>
+          <p class="person"> / person </p>
+             </div>
 
-        Tip Amount / person Total / person Reset
+        <div class="second-part-p-div">
+          <p class="second-part-p">Total
+            <span id="total-amount" class="tip-div">$0.00</span>
+          </p>
+          <p class="person"> / person </p>
+        </div>
+          
+          <button id="second-part-button">RESET</button>
+          
       </div>
     </div>
 
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Gravityrahman</a>.
-    </div>
+    </div> -->
   </body>
 </html>
